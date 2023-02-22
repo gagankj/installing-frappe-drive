@@ -9,8 +9,7 @@
 - Later, after numerous attempts, I got in touch with Abdallah A. Zaqout, one of the authors of Frappe Drive, via LinkedIn.
 - I explained to him the issues I was having.
 - He sent me the versions of Python, Node, Yarn, and other programmes that I needed to install, so I did so.
-![image](https://user-images.githubusercontent.com/103517339/220646047-c50f80a7-a1c6-4ac1-9fc7-5a7a58baeec6.png)
-
+![image](https://user-images.githubusercontent.com/103517339/220646179-fef532b6-5447-4167-82ba-159b413d957c.png)
 - He also included the frappe installation command, which was helpful.
 - After installing frappe bench and setting up my drive app, I was successful in running it through the url.
 - Then I attempted to upload, share, create, and delete folders (also from trash)

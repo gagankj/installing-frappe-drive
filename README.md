@@ -14,6 +14,5 @@
 - After installing frappe bench and setting up my drive app, I was successful in running it through the url.
 - Then I attempted to upload, share, create, and delete folders (also from trash)
 - UPLOADING
-- /home/gagan/Pictu![Screenshot from 2023-02-22 19-54-11](https://user-images.githubusercontent.com/103517339/220651073-28b98265-da28-4e0f-b322-5990b339fac7.png)
-res/Screenshots/Screenshot from 2023-02-22 19-54-11.png
+-![Screenshot from 2023-02-22 19-54-11](https://user-images.githubusercontent.com/103517339/220651073-28b98265-da28-4e0f-b322-5990b339fac7.png)
 

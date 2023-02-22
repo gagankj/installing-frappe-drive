@@ -1,4 +1,5 @@
-# Installing-Frappe-Drive ![836974 (1)](https://user-images.githubusercontent.com/103517339/220635168-19bbad7a-3e39-43b9-a1f7-fdad32dd0688.jpg)
+# Installing-Frappe-Drive ![836974 (2)](https://user-images.githubusercontent.com/103517339/220635314-fc123f8f-cd9d-4a1a-bdc6-6ca2841d0695.jpg)
+
 
 
 - As ubuntu or MacOs is required to run Frappe Framework, so I installed Ubuntu 22.10

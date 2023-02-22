@@ -13,3 +13,5 @@
 - He also included the frappe installation command, which was helpful.
 - After installing frappe bench and setting up my drive app, I was successful in running it through the url.
 - Then I attempted to upload, share, create, and delete folders (also from trash)
+# UPLOADING
+

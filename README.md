@@ -2,11 +2,13 @@
 
 
 
-- As ubuntu or MacOs is required to run Frappe Framework, so I installed Ubuntu 22.10 using Multi-boot.
-- Then I followed the installation steps from the Frappe official documentation.
-- I faced some problems installing it cause may be I missed some warnings or errors.
-- I also referred to Youtube video but it did not helped much and again throwed some errors.
-- Then after so many tries, I contacted one of the contributors (Abdallah A. Zaqout) through LinkedIn.
-- 
-- 
--
+- I used Multi-boot to install Ubuntu 22.10 as installing the Frappe Framework requires either Mac OS X or Ubuntu.
+- After that, I followed through the installation instructions from the official Frappe manual.
+- I had some issues installing it since I may have missed certain errors or warnings.
+- I also used a YouTube video as a resource, but it was not very helpful and again produced several mistakes.
+- Later, after numerous attempts, I got in touch with Abdallah A. Zaqout, one of the authors of Frappe Drive, via LinkedIn.
+- I explained to him the issues I was having.
+- He sent me the versions of Python, Node, Yarn, and other programmes that I needed to install, so I did so.
+- He also included the frappe installation command, which was helpful.
+- After installing frappe bench and setting up my drive app, I was successful in running it through the url.
+- Then I attempted to upload, share, create, and delete folders (also from trash)

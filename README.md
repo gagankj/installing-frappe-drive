@@ -47,7 +47,7 @@ After running these commands, move on to the Steps.
     sudo apt install mariadb-server
 ### 
     sudo mysql_secure_installation
-   Set a password after running this command
+   Set a password after running this command.
     
     
 ### STEP 6
@@ -141,13 +141,44 @@ Now press (Ctrl-X) to exit and restart the mysql.
 copy the url written after ruuning on ( for example - "http://192.168.226.130:8000/") and run it on browser.
 ![Untitled design (3)](https://user-images.githubusercontent.com/103517339/221194437-3376dd92-f45a-4b78-9221-a0e1a7f3e43f.png)
 
+NOT FOUND will be displayed on this site.
+
 
 Open a new terminal tab from top left button  ![Screenshot 2023-02-24 191138 (2)](https://user-images.githubusercontent.com/103517339/221193423-4cc90626-65db-49b6-a35c-5f4d27d55178.jpg)
 
 ### STEP 15
 Run this in new terminal which we just opened in the last step.
 
-   bench get-app https://github.com/frappe/drive
+    bench get-app https://github.com/frappe/drive
+    
+###
+    bench new-site drive.site
+    
+  Here you may need to enter Mysql password which you created earlier.
+  Also you will create Administartor password here.
+###
+    bench use drive.site
+###
+    bench migrate
+###
+    bench --site drive.site add-to-hosts
+###
+    bench --site drive.site install-app drive
+###
+    cd apps/drive && yarn dev
+###
+    
+ Now move to the previous tab in teminal and restart the bench 
+     bench  start
+     
+ Now open the browser and reload the site( refer step 14)
+ 
+ ![image](https://user-images.githubusercontent.com/103517339/221199355-bcece20d-65dc-4914-892d-e9f7d210b3c1.png)
+ 
+ It will appear like this, Enter Administrator as username and the password should the same as created in step 15.
+ ###
+   Frappe Drive is running now.
+
 
     
 

@@ -4,7 +4,7 @@ A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
 
 All the commands mentioned here has to be RUN IN TERMINAL.
 
-### First of all , run these commands in first before installing the drive
+### First of all , run these commands before installing the drive
     sudo apt update
 ###     
     sudo add-apt-repository universe
@@ -83,23 +83,31 @@ add this to the 50-server.cnf file
      character-set-server = utf8mb4
      collation-server = utf8mb4_unicode_ci      
      
+   Add this at the last.
      [mysql]
      default-character-set = utf8mb4
 
-Now press (Ctrl-X) to exit
+Now press (Ctrl-X) to exit and restart the mysql.
 
     sudo service mysql restart
 
-### STEP 8 install Redis
+### STEP 8 Install Redis
     
     sudo apt-get install redis-server
 
-### STEP 9 install Node.js 14.X package
-
+### STEP 9 Install Node.js and npm using NVM
+  Install NVM tool
+###
     sudo apt install curl 
-    curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-    source ~/.profile
-    nvm install 14.15.0  
+###
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+###
+    source ~/.bashrc
+### 
+    nvm --version
+    
+###
+    nvm install v16.19.0
 
 ### STEP 10  install Yarn
 
@@ -115,30 +123,25 @@ Now press (Ctrl-X) to exit
 ### STEP 12 install frappe-bench
 
     sudo -H pip3 install frappe-bench
-    
+### 
+ check the installed version of bench
     bench --version
     
-### STEP 13 initilise the frappe bench & install frappe latest version 
+### STEP 13 
 
-    bench init frappe-bench 
-    
+    bench init —frappe-bench version-14 branch_name
+###
     cd frappe-bench/
+###
+  start the bench
     bench start
+     
+
     
-### STEP 14 create a site in frappe bench 
+### STEP 14 Open a new terminal tab from top left button ![image](https://user-images.githubusercontent.com/103517339/221192948-1a27f6e5-cb49-4b83-b049-68d120246176.png)
     
     bench new-site dcode.com
     
     bench use dcode.com
-
-### STEP 15 install ERPNext latest version in bench & site
-
-    bench get-app erpnext --branch version-13
-    ###OR
-    bench get-app https://github.com/frappe/erpnext --branch version-13
-
-    bench --site dcode.com install-app erpnext
-    
-    bench start
 
     

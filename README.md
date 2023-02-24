@@ -49,11 +49,14 @@ After running these commands, move on to the Steps.
     sudo apt install mariadb-server
 ### 
     sudo mysql_secure_installation
-Set a password after running this command.
+
  
 Press Enter here and press y on both( switch to unix_socket authentication & change the root password)
 
 ![Untitled design (4)](https://user-images.githubusercontent.com/103517339/221205790-8c0d83ee-0ed3-4cbf-b017-efd28d3728f4.png)
+
+Set a password after running this command.
+Press y every time it asks
 
     
     

@@ -84,8 +84,9 @@ After running these commands, move on to the Steps.
      collation-server = utf8mb4_unicode_ci      
      
    Add this at the last.
-     [mysql]
-     default-character-set = utf8mb4
+###
+    [mysql]
+    default-character-set = utf8mb4
 
 Now press (Ctrl-X) to exit and restart the mysql by running this command.
 

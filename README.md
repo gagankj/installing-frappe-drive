@@ -2,14 +2,18 @@
 
 A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
 
+### First of all , run these commands first before installing the drive
+    sudo apt update
+    sudo add-apt-repository universe
+
 ### STEP 1 Install git
     sudo apt-get install git
 
-### STEP 2 Install python-dev
+### STEP 2
 
     sudo apt-get install python3-dev
 
-### STEP 3 Install setuptools and pip (Python's Package Manager).
+### STEP 3
 
     sudo apt-get install python3-setuptools python3-pip
 
@@ -37,18 +41,18 @@ A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
    Set a password here
     
     
-### STEP 6  MySQL database development files
+### STEP 6
 
     sudo apt-get install libmysqlclient-dev
 
-### STEP 7 Edit the mariadb configuration ( unicode character encoding )
+### STEP 7 Edit the mariadb configuration
 
     sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
 add this to the 50-server.cnf file
 
-    
-     [server]
+    Add this after the line [server]
+     
      user = mysql
      pid-file = /run/mysqld/mysqld.pid
      socket = /run/mysqld/mysqld.sock
@@ -60,7 +64,9 @@ add this to the 50-server.cnf file
      query_cache_size = 16M
      log_error = /var/log/mysql/error.log
     
-     [mysqld]
+    Add this after the line [mysqld]
+    
+    
      innodb-file-format=barracuda
      innodb-file-per-table=1
      innodb-large-prefix=1

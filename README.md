@@ -19,6 +19,7 @@ After running these commands, move on to the Steps.
 
 ### STEP 2
   Press y whe asked Do you want to continue
+###
     sudo apt-get install python3-dev
 
 ### STEP 3

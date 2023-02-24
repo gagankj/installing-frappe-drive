@@ -162,7 +162,7 @@ Run this in new terminal which we just opened in the last step.
     bench new-site drive.site
     
   Here you may need to enter Mysql password which you created earlier.
-  Also you will create Administartor password here.
+  Also you will create Administrator password here.
 ###
     bench use drive.site
 ###

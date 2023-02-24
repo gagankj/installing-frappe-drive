@@ -9,7 +9,7 @@ All the commands mentioned here has to be RUN IN TERMINAL.
 ###     
     sudo add-apt-repository universe
 ###
-    sudo add-apt-add multiverse
+    sudo add-apt-repository multiverse
 ###
     sudo apt update
 After running these commands, move on to the Steps.

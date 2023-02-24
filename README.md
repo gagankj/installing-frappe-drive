@@ -109,6 +109,9 @@ Now press (Ctrl-X) to exit and restart the mysql by running this command.
     
 ###
     nvm install v16.19.0
+###
+ After installing node, check the installed version
+     node --version
 
 ### STEP 10  install Yarn
 

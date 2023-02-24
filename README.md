@@ -99,7 +99,13 @@ Press y every time it asks
     innodb-large-prefix=1
     character-set-client-handshake = FALSE
     character-set-server = utf8mb4
-    collation-server = utf8mb4_unicode_ci      
+    collation-server = utf8mb4_unicode_ci   
+   
+   Comment this lines by putting a # at the front of the line 
+   
+   
+   ![Untitled design (5)](https://user-images.githubusercontent.com/103517339/221209134-1fedcb22-d16b-403d-b7f2-11164baeaef9.png)
+
      
    Add this at the last.
 ###

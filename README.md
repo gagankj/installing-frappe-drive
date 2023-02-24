@@ -170,7 +170,10 @@ Check the installed version of bench
 ### STEP 14 
 
 copy the url written after ruuning on ( for example - "http://192.168.226.130:8000/") and run it on browser.
+
+
 ![Untitled design (3)](https://user-images.githubusercontent.com/103517339/221194437-3376dd92-f45a-4b78-9221-a0e1a7f3e43f.png)
+
 
 NOT FOUND will be displayed on this site.
 

@@ -73,14 +73,14 @@ Press y every time it asks
 
   Add this in a next line under the word [server]
      
-     user = mysql
-     pid-file = /run/mysqld/mysqld.pid
-     socket = /run/mysqld/mysqld.sock
-     basedir = /usr
-     datadir = /var/lib/mysql
-     tmpdir = /tmp
-     lc-messages-dir = /usr/share/mysql
-     bind-address = 127.0.0.1
+    user = mysql
+    pid-file = /run/mysqld/mysqld.pid
+    socket = /run/mysqld/mysqld.sock
+    basedir = /usr
+    datadir = /var/lib/mysql
+    tmpdir = /tmp
+    lc-messages-dir = /usr/share/mysql
+    bind-address = 127.0.0.1
      query_cache_size = 16M
      log_error = /var/log/mysql/error.log
     

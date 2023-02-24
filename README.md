@@ -211,6 +211,8 @@ Run this in new terminal which we just opened in the last step.
  ![image](https://user-images.githubusercontent.com/103517339/221199355-bcece20d-65dc-4914-892d-e9f7d210b3c1.png)
  
  It will appear like this, Enter Administrator as username and the password should the same as created in step 15.
+ 
+ Finally, open the URL http://drive.site:8000/drive in your browser to see the app running.
  ###
    Frappe Drive is running now.
 

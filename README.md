@@ -138,8 +138,9 @@ Now press (Ctrl-X) to exit and restart the mysql.
      
 
 
+
     
-### STEP 14 Open a new terminal tab from top left button ![Screenshot 2023-02-24 191138 (1)](https://user-images.githubusercontent.com/103517339/221193250-c53671d2-c8f1-4abf-824b-9ec9bc280454.jpg)
+### STEP 14 Open a new terminal tab from top left button  ![Screenshot 2023-02-24 191138 (2)](https://user-images.githubusercontent.com/103517339/221193423-4cc90626-65db-49b6-a35c-5f4d27d55178.jpg)
     
     bench new-site dcode.com
     

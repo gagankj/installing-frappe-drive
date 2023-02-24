@@ -58,7 +58,7 @@ After running these commands, move on to the Steps.
 
     sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
-add this to the 50-server.cnf file
+
 
   Add this after the line [server]
      

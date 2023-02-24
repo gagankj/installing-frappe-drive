@@ -71,7 +71,9 @@ Press y every time it asks
 
 
 
-  Add this in a next line under the word [server]
+  Add this in a next line under the word [server] like this
+  ![image](https://user-images.githubusercontent.com/103517339/221207997-f92eb101-e77b-40ab-ac94-128dcff3e8ca.png)
+
      
     user = mysql
     pid-file = /run/mysqld/mysqld.pid
@@ -84,7 +86,9 @@ Press y every time it asks
     query_cache_size = 16M
     log_error = /var/log/mysql/error.log
     
-  Add this in a next under the word [mysqld]
+  Add this in a next under the word [mysqld] like this
+  ![image](https://user-images.githubusercontent.com/103517339/221208100-548b0728-3018-43b1-bbc0-cf7da2f406bd.png)
+
     
     
     innodb-file-format=barracuda

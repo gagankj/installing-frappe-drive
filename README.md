@@ -12,7 +12,7 @@ All the commands mentioned here has to be RUN IN TERMINAL.
     sudo add-apt-add multiverse
 ###
     sudo apt update
-After running
+After running these commands, move on to the Steps.
 
 ### STEP 1 Install git
     sudo apt-get install git

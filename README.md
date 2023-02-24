@@ -2,7 +2,7 @@
 
 A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
 
-All the commands mentioned here has to be run in terminal.
+All the commands mentioned here has to be RUN IN TERMINAL.
 
 ### First of all , run these commands in first before installing the drive
     sudo apt update
@@ -18,7 +18,6 @@ After running
     sudo apt-get install git
 
 ### STEP 2
-
     sudo apt-get install python3-dev
 
 ### STEP 3
@@ -44,9 +43,11 @@ After running
 ### STEP 5 Install MariaDB
 
     sudo apt-get install software-properties-common
+### 
     sudo apt install mariadb-server
+### 
     sudo mysql_secure_installation
-   Set a password here
+   Set a password after running this command
     
     
 ### STEP 6

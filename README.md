@@ -1,22 +1,141 @@
-#  ![836974 (2)](https://user-images.githubusercontent.com/103517339/220635314-fc123f8f-cd9d-4a1a-bdc6-6ca2841d0695.jpg) Installing-FRAPPE-Drive 
+# Guide-to-Install-Frappe-ERPNext-in-Ubuntu-22.04-LTS
+A complete Guide to Install Frappe Bench in Ubuntu 22.04 LTS and install Frappe/ERPNext Application
+
+### Pre-requisites 
+
+      Python 3.6+
+      Node.js 14+
+      Redis 5                                       (caching and real time updates)
+      MariaDB 10.3.x / Postgres 9.5.x               (to run database driven apps)
+      yarn 1.12+                                    (js dependency manager)
+      pip 20+                                       (py dependency manager)
+      wkhtmltopdf (version 0.12.5 with patched qt)  (for pdf generation)
+      cron                                          (bench's scheduled jobs: automated certificate renewal, scheduled backups)
+      NGINX                                         (proxying multitenant sites in production)
 
 
 
-- I used Multi-boot to install Ubuntu 22.10 as installing the Frappe Framework requires either Mac OS X or Ubuntu.
-- After that, I followed through the installation instructions from the official Frappe manual --> https://frappeframework.com/docs/v14/user/en/installation
-- I had some issues installing it since I may have missed certain errors or warnings.
-- I also used a YouTube video as a resource, but it was not very helpful and again produced several mistakes.
-- Later, after numerous attempts, I got in touch with Abdallah A. Zaqout, one of the authors of Frappe Drive, via LinkedIn.
-- I explained to him the issues I was having.
-- He sent me the versions of Python, Node, Yarn, and other programmes that I needed to install, so I did so.
-![image](https://user-images.githubusercontent.com/103517339/220646179-fef532b6-5447-4167-82ba-159b413d957c.png)
-- He also included the frappe installation command, which was helpful.
-- After installing frappe bench and setting up my drive app, I was successful in running it through the url.
-- Then I attempted to upload, share, create, and delete folders (also from trash)
-- UPLOADING
-![Screenshot from 2023-02-22 19-54-11](https://user-images.githubusercontent.com/103517339/220651073-28b98265-da28-4e0f-b322-5990b339fac7.png)
-- CREATING FOLDER
-![Screenshot from 2023-02-22 19-53-57](https://user-images.githubusercontent.com/103517339/220651527-6492dd83-49d7-460b-8511-1a19232043b0.png)
+### STEP 1 Install git
+    sudo apt-get install git
 
-- DELETING FILES
-![Screenshot from 2023-02-22 19-54-48](https://user-images.githubusercontent.com/103517339/220651745-c2d4ef56-a64d-4565-aac8-057bf8b5e10a.png)
+### STEP 2 install python-dev
+
+    sudo apt-get install python3-dev
+
+### STEP 3 Install setuptools and pip (Python's Package Manager).
+
+    sudo apt-get install python3-setuptools python3-pip
+
+### STEP 4 Install virtualenv
+    
+    sudo apt-get install virtualenv
+    
+  CHECK PYTHON VERSION 
+  
+    python3 -V
+  
+  IF VERSION IS 3.8.X RUN
+  
+    sudo apt install python3.8-venv
+
+  IF VERSION IS 3.10.X RUN
+  
+     sudo apt install python3.10-venv
+
+### STEP 5 Install MariaDB
+
+    sudo apt-get install software-properties-common
+    sudo apt install mariadb-server
+    sudo mysql_secure_installation
+    
+    
+### STEP 6  MySQL database development files
+
+    sudo apt-get install libmysqlclient-dev
+
+### STEP 7 Edit the mariadb configuration ( unicode character encoding )
+
+    sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+
+add this to the 50-server.cnf file
+
+    
+     [server]
+     user = mysql
+     pid-file = /run/mysqld/mysqld.pid
+     socket = /run/mysqld/mysqld.sock
+     basedir = /usr
+     datadir = /var/lib/mysql
+     tmpdir = /tmp
+     lc-messages-dir = /usr/share/mysql
+     bind-address = 127.0.0.1
+     query_cache_size = 16M
+     log_error = /var/log/mysql/error.log
+    
+     [mysqld]
+     innodb-file-format=barracuda
+     innodb-file-per-table=1
+     innodb-large-prefix=1
+     character-set-client-handshake = FALSE
+     character-set-server = utf8mb4
+     collation-server = utf8mb4_unicode_ci      
+     
+     [mysql]
+     default-character-set = utf8mb4
+
+Now press (Ctrl-X) to exit
+
+    sudo service mysql restart
+
+### STEP 8 install Redis
+    
+    sudo apt-get install redis-server
+
+### STEP 9 install Node.js 14.X package
+
+    sudo apt install curl 
+    curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+    source ~/.profile
+    nvm install 14.15.0  
+
+### STEP 10  install Yarn
+
+    sudo apt-get install npm
+
+    sudo npm install -g yarn
+
+### STEP 11 install wkhtmltopdf
+
+    sudo apt-get install xvfb libfontconfig wkhtmltopdf
+    
+
+### STEP 12 install frappe-bench
+
+    sudo -H pip3 install frappe-bench
+    
+    bench --version
+    
+### STEP 13 initilise the frappe bench & install frappe latest version 
+
+    bench init frappe-bench 
+    
+    cd frappe-bench/
+    bench start
+    
+### STEP 14 create a site in frappe bench 
+    
+    bench new-site dcode.com
+    
+    bench use dcode.com
+
+### STEP 15 install ERPNext latest version in bench & site
+
+    bench get-app erpnext --branch version-13
+    ###OR
+    bench get-app https://github.com/frappe/erpnext --branch version-13
+
+    bench --site dcode.com install-app erpnext
+    
+    bench start
+
+    

@@ -128,8 +128,9 @@ Now press (Ctrl-X) to exit and restart the mysql by running this command.
 ### STEP 12 install frappe-bench
 
     sudo -H pip3 install frappe-bench
-### 
- check the installed version of bench
+
+Check the installed version of bench
+ ### 
     bench --version
     
 ### STEP 13 

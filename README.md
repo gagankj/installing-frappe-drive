@@ -60,7 +60,7 @@ After running these commands, move on to the Steps.
 
 add this to the 50-server.cnf file
 
-    Add this after the line [server]
+  Add this after the line [server]
      
      user = mysql
      pid-file = /run/mysqld/mysqld.pid
@@ -73,7 +73,7 @@ add this to the 50-server.cnf file
      query_cache_size = 16M
      log_error = /var/log/mysql/error.log
     
-    Add this after the line [mysqld]
+  Add this after the line [mysqld]
     
     
      innodb-file-format=barracuda

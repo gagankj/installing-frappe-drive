@@ -6,6 +6,10 @@ A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
     sudo apt update
 ###     
     sudo add-apt-repository universe
+###
+    sudo add-apt-add multiverse
+###
+    sudo apt update
 
 ### STEP 1 Install git
     sudo apt-get install git

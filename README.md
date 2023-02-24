@@ -1,4 +1,4 @@
-# INSTALLING FRAPPE DRIVE ![836974 (2)](https://user-images.githubusercontent.com/103517339/221184251-18f51e1c-c91d-4d6c-b58a-ca7848d10252.jpg)
+#  ![836974 (2)](https://user-images.githubusercontent.com/103517339/221184251-18f51e1c-c91d-4d6c-b58a-ca7848d10252.jpg) INSTALLING FRAPPE DRIVE
 
 A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
 

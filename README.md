@@ -138,7 +138,7 @@ Now press (Ctrl-X) to exit and restart the mysql.
      
 ### STEP 14 
 
-copy the url written after ruuning on ( for example - http://192.168.226.130:8000/
+copy the url written after ruuning on ( for example - "http://192.168.226.130:8000/") and run it on browser.
 ![Untitled design (3)](https://user-images.githubusercontent.com/103517339/221194437-3376dd92-f45a-4b78-9221-a0e1a7f3e43f.png)
 Open a new terminal tab from top left button  ![Screenshot 2023-02-24 191138 (2)](https://user-images.githubusercontent.com/103517339/221193423-4cc90626-65db-49b6-a35c-5f4d27d55178.jpg)
 

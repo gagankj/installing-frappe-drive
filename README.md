@@ -60,7 +60,7 @@ After running these commands, move on to the Steps.
 
 
 
-  Add this after the line [server]
+  Add this in a next line under the word [server]
      
      user = mysql
      pid-file = /run/mysqld/mysqld.pid
@@ -73,7 +73,7 @@ After running these commands, move on to the Steps.
      query_cache_size = 16M
      log_error = /var/log/mysql/error.log
     
-  Add this after the line [mysqld]
+  Add this in a next under the word [mysqld]
     
     
      innodb-file-format=barracuda
@@ -87,7 +87,7 @@ After running these commands, move on to the Steps.
      [mysql]
      default-character-set = utf8mb4
 
-Now press (Ctrl-X) to exit and restart the mysql.
+Now press (Ctrl-X) to exit and restart the mysql by running this command.
 
     sudo service mysql restart
 

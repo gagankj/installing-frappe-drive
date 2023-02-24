@@ -34,6 +34,7 @@ A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
     sudo apt-get install software-properties-common
     sudo apt install mariadb-server
     sudo mysql_secure_installation
+   Set a password here
     
     
 ### STEP 6  MySQL database development files

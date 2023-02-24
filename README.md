@@ -4,6 +4,7 @@ A complete Guide to Install Frappe Drive in Ubuntu 22.04 LTS.
 
 ### First of all , run these commands first before installing the drive
     sudo apt update
+###     
     sudo add-apt-repository universe
 
 ### STEP 1 Install git

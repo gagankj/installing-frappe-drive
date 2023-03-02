@@ -126,6 +126,9 @@ Now press (Ctrl-X) to exit and restart the mysql by running this command.
     sudo apt install curl 
 ###
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+If there is a error like this: curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to raw.githubusercontent.com:443
+Then try running this command first and then try the previous command.
+    openssl s_client -connect github.com:443 -servername github.com
 ###
     source ~/.bashrc
 ### 

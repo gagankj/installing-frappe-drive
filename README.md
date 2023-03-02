@@ -164,7 +164,7 @@ Check the installed version of bench
     
 ### STEP 13 
 
-    bench init —frappe-bench version-14 branch_name
+    bench init frappe-bench --frappe-branch version-14
 ###
     cd frappe-bench/
 

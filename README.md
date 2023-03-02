@@ -146,7 +146,7 @@ Then try running this command first and then try the previous command.
 ### STEP 10  install Yarn
 
     sudo apt-get install npm
-
+###
     sudo npm install -g yarn
 
 ### STEP 11 install wkhtmltopdf
